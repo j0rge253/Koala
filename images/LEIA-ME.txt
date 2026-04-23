@@ -1,0 +1,44 @@
+KOALA SPORTS — Como organizar as imagens
+=========================================
+
+Copie as imagens que você enviou para:
+- hero-messi.png (Bem-vindo / Messi)
+- arte-jogadores-2026.png (Jogadores / Copa 2026)
+
+1) LOGO
+   Coloque a logo da Koala Sports (koala com coroa, "KS") com o nome:
+   logo-koala-sports.png
+
+2) HERO (imagem de fundo da primeira tela)
+   Coloque a imagem do Messi / camisa com o nome:
+   hero-messi.png
+
+3) BANNER 2026 (arte dos jogadores / taça / poker)
+   Coloque a imagem colorida dos jogadores e Copa 2026 com o nome:
+   arte-jogadores-2026.png
+
+4) PASTAS POR TIME (galeria ao clicar em "Ver fotos")
+   Cada camisa tem uma pasta. Dentro, coloque as fotos em diferentes ângulos.
+   O site usa a PRIMEIRA imagem (1.png) no card; ao clicar, abre o carrossel.
+
+   Pastas:
+   - real-madrid/
+   - manchester-city/
+   - manchester-united/
+   - barcelona/
+   - liverpool/
+   - brasil/
+
+   Em cada pasta use: 1.png, 2.png, 3.png (e mais se quiser).
+   Para outros nomes de arquivo, edite no script.js a variável PRODUTOS_GALERIA.
+
+5) FALLBACK (se a pasta ainda não tiver 1.png)
+   O card usa automaticamente as imagens na raiz:
+   - real-madrid-25-26.png
+   - manchester-city-24-25.png
+   - manchester-united-24-26.png
+   - barcelona-24-25.png
+   - liverpool-24-25.png
+   - brasil-26.png
+
+WhatsApp: +55 (85) 99654-3820 — ao clicar em "Compre Agora" o cliente vai direto para lá.

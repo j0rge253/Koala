@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Koala Sports — Camisas de Time | Qualidade e Paixão</title>
+  <meta name="description" content="Onde a paixão encontra a qualidade. As melhores camisas de time na Koala Sports.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Outfit:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="header">
+    <div class="header-inner">
+      <a href="#" class="logo-link">
+        <img src="images/logo-koala-sports.png" alt="Koala Sports" class="logo-img" width="160" height="60" onerror="this.src='https://placehold.co/160x60/1a1a1a/ffffff?text=KOALA+SPORTS';">
+      </a>
+      <nav class="nav">
+        <a href="#hero">Início</a>
+        <a href="#produtos">Camisas</a>
+        <a href="#sobre">Sobre</a>
+        <a href="#contato">Contato</a>
+      </nav>
+      <button class="btn-menu" aria-label="Menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <main>
+    <section id="hero" class="hero">
+      <div class="hero-bg">
+        <img src="images/hero-messi.png" alt="" width="1920" height="1080" fetchpriority="high">
+        <div class="hero-overlay"></div>
+      </div>
+      <div class="hero-content">
+        <p class="hero-tag">Koala Sports</p>
+        <h1 class="hero-title">Onde a paixão encontra a <span>qualidade</span>.</h1>
+        <p class="hero-sub">Vista o manto sagrado com o padrão que você merece.</p>
+        <a href="#produtos" class="btn btn-primary">Ver coleção</a>
+      </div>
+    </section>
+
+    <section id="produtos" class="produtos">
+      <div class="container">
+        <div class="section-head">
+          <p class="section-tag">Destaques</p>
+          <h2 class="section-title">Camisas em destaque</h2>
+        </div>
+        <div class="grid-produtos">
+          
+          <article class="card-produto" data-product-id="real-madrid">
+            <div class="card-image card-image-click" role="button" tabindex="0">
+              <img src="" alt="Real Madrid Home" data-first>
+              <span class="card-ver-fotos">Ver fotos</span>
+              <div class="card-badge">1:1</div>
+            </div>
+            <div class="card-body">
+              <span class="card-clube">Real Madrid</span>
+              <h3 class="card-nome">Camisa Real Madrid Home 25-26</h3>
+              <p class="card-desc">Qualidade Tailandesa 1:1. Bordados impecáveis.</p>
+              <div class="card-footer">
+                <span class="card-preco">R$ 180,00</span>
+                <a href="https://wa.me/5585996543820" class="btn btn-primary btn-whatsapp" target="_blank">Compre Agora</a>
+              </div>
+            </div>
+          </article>
+
+          <article class="card-produto" data-product-id="manchester-city">
+            <div class="card-image card-image-click" role="button" tabindex="0">
+              <img src="" alt="Man City Home" data-first>
+              <span class="card-ver-fotos">Ver fotos</span>
+              <div class="card-badge">1:1</div>
+            </div>
+            <div class="card-body">
+              <span class="card-clube">Manchester City</span>
+              <h3 class="card-nome">Camisa Man City Home 24-25</h3>
+              <p class="card-desc">Padrão de jogo com acabamento premium.</p>
+              <div class="card-footer">
+                <span class="card-preco">R$ 180,00</span>
+                <a href="https://wa.me/5585996543820" class="btn btn-primary btn-whatsapp" target="_blank">Compre Agora</a>
+              </div>
+            </div>
+          </article>
+
+          <article class="card-produto" data-product-id="brasil">
+            <div class="card-image card-image-click" role="button" tabindex="0">
+              <img src="" alt="Brasil 2026" data-first>
+              <span class="card-ver-fotos">Ver fotos</span>
+              <div class="card-badge">1:1</div>
+            </div>
+            <div class="card-body">
+              <span class="card-clube">Seleção Brasileira</span>
+              <h3 class="card-nome">Camisa Brasil Home 2026</h3>
+              <p class="card-desc">A amarelinha com a qualidade que você busca.</p>
+              <div class="card-footer">
+                <span class="card-preco">R$ 180,00</span>
+                <a href="https://wa.me/5585996543820" class="btn btn-primary btn-whatsapp" target="_blank">Compre Agora</a>
+              </div>
+            </div>
+          </article>
+
+          <article class="card-produto" data-product-id="flamengo-retro">
+            <div class="card-image card-image-click" role="button" tabindex="0">
+              <img src="" alt="Flamengo Retro" data-first>
+              <span class="card-ver-fotos">Ver fotos</span>
+              <div class="card-badge">Retro</div>
+            </div>
+            <div class="card-body">
+              <span class="card-clube">Flamengo</span>
+              <h3 class="card-nome">Flamengo Retro 08-09</h3>
+              <p class="card-desc">O manto histórico do Hexa. Tecido e detalhes fiéis à época.</p>
+              <div class="card-footer">
+                <span class="card-preco">R$ 180,00</span>
+                <a href="https://wa.me/5585996543820" class="btn btn-primary btn-whatsapp" target="_blank">Compre Agora</a>
+              </div>
+            </div>
+          </article>
+
+          <article class="card-produto" data-product-id="milan-retro">
+            <div class="card-image card-image-click" role="button" tabindex="0">
+              <img src="" alt="Milan Retro" data-first>
+              <span class="card-ver-fotos">Ver fotos</span>
+              <div class="card-badge">Retro</div>
+            </div>
+            <div class="card-body">
+              <span class="card-clube">Milan</span>
+              <h3 class="card-nome">Milan Retro 06-07</h3>
+              <p class="card-desc">A era de ouro Rossonera. Qualidade premium 1:1.</p>
+              <div class="card-footer">
+                <span class="card-preco">R$ 180,00</span>
+                <a href="https://wa.me/5585996543820" class="btn btn-primary btn-whatsapp" target="_blank">Compre Agora</a>
+              </div>
+            </div>
+          </article>
+
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <div id="modal-galeria" class="modal-galeria" role="dialog" aria-modal="true" hidden>
+    <div class="modal-galeria-backdrop"></div>
+    <div class="modal-galeria-box">
+      <button type="button" class="modal-galeria-close">&times;</button>
+      <button type="button" class="modal-galeria-prev">&larr;</button>
+      <div class="modal-galeria-slide">
+        <img src="" alt="" id="modal-galeria-img">
+      </div>
+      <button type="button" class="modal-galeria-next">&rarr;</button>
+      <div class="modal-galeria-dots" id="modal-galeria-dots"></div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
