@@ -681,6 +681,18 @@
   // Adicionar evento ao botão do carrinho no header
   document.getElementById('btn-abrir-carrinho')?.addEventListener('click', abrirCarrinho);
   
+  // Menu mobile toggle
+  document.getElementById('btn-menu-mobile')?.addEventListener('click', () => {
+    document.querySelector('.nav').classList.toggle('active');
+  });
+
+  // Fechar menu ao clicar em link
+  document.querySelectorAll('.nav a').forEach(link => {
+    link.addEventListener('click', () => {
+      document.querySelector('.nav').classList.remove('active');
+    });
+  });
+  
   // Adicionar evento ao botão de tema
   document.getElementById('btn-theme-toggle')?.addEventListener('click', toggleTheme);
   

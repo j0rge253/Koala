@@ -280,10 +280,7 @@ body.dark-mode .garantia-item:hover { background: #2a3a2a; }
 .btn-finalizar { display: block; background: #25D366; color: #fff; padding: 18px; text-align: center; font-weight: 800; border-radius: 8px; margin-top: 25px; text-transform: uppercase; font-size: 1rem; transition: all 0.2s; }
 .btn-finalizar:hover { background: #1fb855; }
 
-@media (max-width: 900px) {
-  .sobre-grid, .propaganda-grid, .footer-grid, .modal-produto-layout { grid-template-columns: 1fr; }
-  .propaganda-grid img { height: 350px; }
-}
+/* Grid sobre/propaganda/footer/modal - consolidado nos media queries abaixo */
 
 
 /* ========================================
@@ -400,15 +397,123 @@ body.dark-mode .theme-icon-dark { display: block !important; }
 .sem-resultados, .erro-carregamento { grid-column: 1 / -1; text-align: center; padding: 60px 20px; }
 .sem-resultados p, .erro-carregamento p { font-size: 1.2rem; margin-bottom: 20px; color: #666; }
 
-/* Responsivo */
+/* ========================================
+   RESPONSIVIDADE COMPLETA
+   Desktop > 1024px | Tablet 768-1024px | Mobile < 768px
+   ======================================== */
+
+/* --- TABLET (768px - 1024px) --- */
+@media (max-width: 1024px) {
+  .container { padding: 0 16px; }
+  .hero { padding-bottom: 120px; min-height: 70vh; }
+  .estatisticas-grid { gap: 10px; }
+  .passos-grid { gap: 24px; }
+  .passos-grid::before { display: none; }
+  .garantias-grid { grid-template-columns: repeat(2, 1fr); gap: 16px; }
+  .cat-rectangle { width: 180px; height: 260px; }
+  .propaganda-grid { grid-template-columns: repeat(2, 1fr); }
+  .propaganda-grid img { height: 380px; }
+  .propaganda-grid img:last-child { grid-column: 1 / -1; }
+  .sobre-grid { gap: 30px; }
+  .footer-grid { grid-template-columns: 1fr 1fr; gap: 30px; }
+  .modal-produto-box { padding: 20px; }
+  .modal-produto-layout { gap: 20px; }
+  .modal-main-image { min-height: 300px; }
+}
+
+/* --- MOBILE (< 768px) --- */
 @media (max-width: 768px) {
+  /* Header */
   .btn-menu-mobile { display: flex; }
-  .nav { position: fixed; top: 70px; left: -100%; width: 100%; background: #000; flex-direction: column; padding: 20px; transition: 0.3s; border-top: 1px solid #222; }
+  .nav { position: fixed; top: 70px; left: -100%; width: 100%; background: #000; flex-direction: column; padding: 20px; transition: 0.3s; border-top: 1px solid #222; z-index: 999; }
   .nav.active { left: 0; }
+  .banner-frete { font-size: 0.75rem; padding: 8px 10px; }
+  .logo-img { height: 36px; }
+
+  /* Hero */
+  .hero { min-height: 60vh; padding-bottom: 60px; margin-top: 36px; }
+  .hero-legenda { font-size: 1.3rem; letter-spacing: 2px; }
+  .hero-sub { font-size: 0.82rem; }
+  .btn-hero { padding: 10px 20px; font-size: 0.75rem; }
+
+  /* Estatísticas */
+  .estatisticas-grid { grid-template-columns: repeat(2, 1fr); gap: 8px; padding: 0 8px; }
+  .estatistica-numero { font-size: 1.2rem; }
+  .estatistica-label { font-size: 0.6rem; }
+
+  /* Como Funciona */
+  .como-funciona { padding: 50px 0; }
+  .passos-grid { grid-template-columns: 1fr; gap: 40px; }
+  .passos-grid::before { display: none; }
+  .secao-titulo-center { font-size: 2rem; }
+
+  /* Garantias */
+  .garantias { padding: 40px 0; }
+  .garantias-grid { grid-template-columns: repeat(2, 1fr); gap: 12px; }
+  .garantia-item { padding: 20px 12px; }
+  .garantia-icon { font-size: 2rem; }
+
+  /* Categorias */
+  .categorias { padding: 50px 0; }
+  .categorias-titulo { font-size: 2rem; }
+  .cat-rectangle { width: 140px; height: 200px; }
+  .cat-visual-card span { font-size: 0.85rem; }
+
+  /* Banners */
+  .banner-central { padding: 30px 0; }
+  .banners-grid-duo { grid-template-columns: 1fr; gap: 12px; }
+  .banner-img-duo { height: 220px; }
+
+  /* Produtos / Carrosséis */
+  .produtos { padding: 40px 0; }
+  .secao-titulo { font-size: 1.8rem; }
+  .card-produto { width: 200px; }
+  .seta-esq { left: -12px; }
+  .seta-dir { right: -12px; }
+  .seta-carrossel { width: 28px; height: 28px; font-size: 1rem; }
+
+  /* Ligas */
+  .ligas-faixa { gap: 12px; padding: 16px; }
+  .liga-item-box { width: 64px; height: 64px; border-radius: 14px; }
+  .liga-item-box img { width: 46px; height: 46px; }
+  .liga-item span { font-size: 0.62rem; }
+
+  /* Times */
+  .times-faixa { gap: 10px; padding: 16px; }
+  .time-item-circle { width: 56px; height: 56px; }
+  .time-item span { font-size: 0.6rem; max-width: 56px; }
+
+  /* Propaganda */
+  .propaganda-secao { padding: 30px 0; }
+  .propaganda-grid { grid-template-columns: 1fr; }
+  .propaganda-grid img { height: 280px; }
+
+  /* Sobre */
+  .sobre { padding: 50px 0; }
+  .sobre-grid { grid-template-columns: 1fr; gap: 30px; }
+  .secao-titulo-sobre { font-size: 2rem; }
+  .sobre-diferenciais { grid-template-columns: 1fr; }
+  .sobre-visual { display: none; }
+
+  /* Footer */
+  .footer { padding: 40px 0 20px; }
+  .footer-grid { grid-template-columns: 1fr; gap: 24px; }
+
+  /* Modal */
+  .modal-produto { padding: 0; align-items: flex-end; }
+  .modal-produto-box { padding: 16px; border-radius: 16px 16px 0 0; max-height: 92vh; overflow-y: auto; width: 100%; }
+  .modal-produto-layout { grid-template-columns: 1fr; gap: 16px; }
+  .modal-main-image { min-height: 240px; }
+  .modal-thumb-list { flex-direction: row; order: 1; overflow-x: auto; }
+  .modal-thumb-item { width: 60px; height: 60px; flex-shrink: 0; }
+  .modal-produto-info h2 { font-size: 1.3rem; }
+  .modal-acoes-compra { flex-direction: column; }
+
+  /* Carrinho */
   .cart-sidebar { max-width: 100%; }
-  .modal-produto-layout { grid-template-columns: 1fr; }
-  .modal-thumb-list { flex-direction: row; order: 1; }
-  .btn-whatsapp-float { bottom: 80px; }
+
+  /* WhatsApp float */
+  .btn-whatsapp-float { bottom: 16px; right: 16px; width: 52px; height: 52px; }
 }
 
 
@@ -458,11 +563,7 @@ body.dark-mode .time-item.active .time-item-circle { background: #1a3a2a; }
 .btn-filtro:hover { border-color: var(--accent-green); color: var(--accent-green); transform: translateY(-2px); }
 .btn-filtro.active { background: var(--accent-green); color: var(--black); border-color: var(--accent-green); }
 
-/* Responsivo para Banners */
-@media (max-width: 900px) {
-  .banners-grid { grid-template-columns: 1fr; }
-  .banner-img { height: 300px; }
-}
+/* Responsivo para Banners - consolidado acima */
 
 
 /* Card Actions - Botão Carrinho + Comprar */
@@ -493,8 +594,4 @@ body.dark-mode .time-item.active .time-item-circle { background: #1a3a2a; }
 .modal-produto-close { position: absolute; top: 15px; right: 15px; font-size: 2.5rem; color: #999; background: none; border: none; cursor: pointer; z-index: 10; transition: color 0.3s; }
 .modal-produto-close:hover { color: #000; }
 
-/* Responsivo Banners Duo */
-@media (max-width: 768px) {
-  .banners-grid-duo { grid-template-columns: 1fr; }
-  .banner-img-duo { height: 300px; }
-}
+/* Responsivo Banners Duo - consolidado acima */
